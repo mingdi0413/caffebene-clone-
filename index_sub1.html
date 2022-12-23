@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/sub1.css">
+    <script src="./js/jquary.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/sub1.js"></script> 
+    <title>cafebene-brand story</title>
+    <script>
+        $(document).ready(function () {
+            $('.sub_mn_area').hide();
+            let key = true;
+            console.log(key);
+
+            $('#header nav').mouseenter(function () {
+                if (key == true) {
+                    key = false;
+                    console.log(key);
+                    $('.sub_mn_area').show().css({ height: '0px' }).animate({ height: '235px' });
+                }
+            });
+            $('#header nav').mouseleave(function () {
+                if (key == true) {
+                    key = false;
+                    console.log(key);
+                    $('.sub_mn_area').show().css({ height: '0px' }).animate({ height: '235px' });
+                }
+            });
+            $('.sub_mn_area').mouseleave(function () {
+                key = false;
+                console.log(key);
+                $(this).css({ height: '300px' }).animate({ height: 0 })
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 상단 -->
+        <header id="header">
+            <div class="header_in">
+                <!-- 로고 -->
+                <div class="logo"></div>
+                <!-- 네비게이션 -->
+                 <nav id="nav">
+                    <ul>
+                        <li><a href="#">CAFFEBENE</a></li>
+                        <li><a href="#">MENU</a></li>
+                        <li><a href="#">STORE</a></li>
+                        <li><a href="#">MEMBERSHIP</a></li>
+                        <li><a href="#">GLOBAL</a></li>
+                        <li><a href="#">CONTENTS</a></li>
+                    </ul>
+                </nav>
+                       <!-- 오른쪽 가맹문의 버튼 -->
+                <a href="#" class="btn">가맹문의</a>
+                <!-- 언어(번역) -->
+                <div class="lang">
+                    <ul>
+                        <li><a href="#">KR</a></li>
+                        <li><a href="#">EN</a></li>
+                    </ul>
+                </div>
+            <!-- 서브메뉴 -->
+               <div class="sub_mn_area">
+                <ul>
+                    <li>
+                        <a href="#">브랜드 스토리</a>
+                        <a href="#">베네캣 스토리</a>
+                        <a href="#">카페베네 원두</a>
+                        <a href="#">카페베네 소식</a>
+                        <a href="#">매거진</a>
+                    </li>
+                    <li>
+                        <a href="#">신메뉴</a>
+                        <a href="#">커피</a>
+                        <a href="#">음료</a>
+                        <a href="#">푸드</a>
+                        <a href="#">MD상품</a>
+                        <a href="#">Retail</a>
+                    </li>
+                    <li>
+                        <a href="#">국내</a>
+                        <a href="#">해외</a>
+                    </li>
+                    <li>
+                        <a href="#">등급&혜택</a>
+                        <a href="#">가입방법안내</a>
+                        <a href="#">서비스</a>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">해외매장안내</a>
+                        <a href="#">해외사업소개</a>
+                        <a href="#">해외가맹&유통문의</a>
+                    </li>
+                    <li>
+                        <a href="#">커피</a>
+                        <a href="#">우리동네</a>
+                        <a href="#">사람들</a>
+                        <a href="#">메뉴</a>
+                        <a href="#">이벤트</a>
+                        <a href="#">매장</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </header>
+        <!-- 컨텐츠 -->
+        <section id="container">
+            <!-- 상단 슬라이드 -->
+            <article class="top_contents">
+                <!-- 상단 바로가기? -->
+                <div class="bar">
+                    <div class="bar_in">
+                        <a href="#">
+                            <span class="home"></span>
+                        </a>
+                        <a href="#">
+                            <span class="txt">CAFFEBENE</span>
+                        </a>
+                        <a href="#">
+                            <span class="txt">브랜드 스토리</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- 슬라이드 -->
+                <div class="slider">
+                    <ul class="slides">
+                      <li class="slide1">
+                        <div>
+                        <img src="./img.sub1/bene-s1.jpg" alt="메인이미지1"> 
+                        <div class="text_middle_b">
+                        <h4>우리동네에는[오래된 기찻길]이 있습니다.</h4>
+                        </div>
+                        </div>
+                      </li>
+                     <li class="slide2">
+                        <div>
+                        <img src="./img.sub1/bene-s2.jpg" alt="메인이미지2"> 
+                        <div class="text_top_r">
+                          <h4>우리동네에는[도시의 반딧불]이 있습니다.</h4>
+                        </div>
+                        </div>
+                      </li>
+                      <li class="slide3">
+                        <div>
+                        <img src="./img.sub1/bene-s3.jpg" alt="메인이미지3"> 
+                        <div class="text_bottom_l">
+                          <h4>우리동네에는[아이들의 웃음소리]가 있습니다</h4>
+                        </div>
+                    </div>
+                      </li>
+                       <li class="slide4">
+                        <div>
+                        <img src="./img.sub1/bene-s4.jpg" alt="메인이미지4"> 
+                        <div class="text_bottom_b">
+                          <h4>우리동네에는[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]가 있습니다</h4>
+                        </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- 상단 슬라이드버튼 -->
+                    <ul class="btn">
+                        <li><a href="#" class="on">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                    </ul> 
+                  </div>  
+            </article>
+            <!--하단 컨텐츠  -->
+            <article class="bot_contents">
+                <!-- 카페베네 스토리 -->
+                <div class="bene_story">
+                    <!-- 첫번째 section -->
+                    <div class="sect1">
+                        <p class="t1">
+                        동네마다 알게 모르게 <br>
+                        우리 곁을 둘러싸고 있는
+                        </p>
+                        <p class="t2">
+                            정겨운 것들이 있습니다.
+                        </p>
+                    </div>
+                    <!-- 두번째 section -->
+                    <div class="sect2">
+                        <img src="./img.sub1/bene1.jpg" alt="bene-story 사진1">
+                        <p class="txt1">
+                        오래된 세탁소, 아이들 웃음 소리처럼-
+                        <br>
+                        없으면, 서운하고
+                        <br>
+                        있으면, 더 없이 좋은 그런 것들이요
+                        </p>
+                    <div class="sect2-1">
+                        <img src="./img.sub1/bene2.jpg" alt="bene_story 사진2">
+                    <div class="txt2-1">
+                        <p>우리도 그런 존재가 되려고 합니다</p>
+                        <p>화려한 랜드마크는 아니더라도
+                            <br>누구나 편하게 드나들 수 있는 곳
+                        </p>
+                        <p>
+                            언제나 활짝 열려 있는
+                            <br>동네 사랑방 같은 곳이 되려고 합니다
+                        </p>
+                        <p>
+                            우리 동네의 자랑이 되고 싶습니다
+                            <br> 나의 정다운 이웃, 당신을 기다리고 있습니다.
+                        </p>
+                    </div>
+                    </div>
+                    </div>
+                    <!--  글자 배경 -->
+                    <div class="after_img"></div>
+                    <!-- 세번째 section (하단 슬라이드)-->
+                    <div class="sect3">
+                    <div class="slider2">
+                    <ul class="slides2">
+                    <li>
+                        <img src="./img.sub1/bene-s21.jpg" alt="하단 배너이미지1"> 
+                        <div class="txt_1">
+                        <h4>카페베네에는 [<strong>우리의 이야기</strong>]가 있습니다.</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img.sub1/bene-s22.jpg" alt="하단 배너이미지2"> 
+                        <div class="txt_2">
+                        <h4>카페베네에는 [<strong>따뜻한 배려</strong>]가 있습니다.</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img.sub1/bene-s23.jpg" alt="하단 배너이미지3"> 
+                        <div class="txt_3">
+                        <h4>카페베네에는 [<strong>소중한 진심</strong>]가 있습니다.</h4>
+                        </li>
+                    </ul>
+                    <ul class="btn2">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                    </ul> 
+                </div>
+            </div> 
+            <div class="sect4">
+            <div class="in">
+                <p class="txt_4">
+                    <strong>2008년부터 지금까지 
+                        <br> 카페베네는 대한민국 대표 토종 커피브랜드로 많은 사랑을 받아왔습니다</strong>
+                </p>
+                <p class="txt_5">
+                    '배려'와 '진정성'으로
+                    <br> 소중한 오늘의 이야기를 만들어가는 곳
+                    <br> 가장 나다운 시간을 보낼 수 있는 곳
+                    <br> 누구에게나 소중한 진심을 다하는 곳이 되겠습니다
+                </p>
+                <div class="sect4-1">
+                    <img src="./img.sub1/bene4.jpg" alt="bene-story 사진3">
+                    <p class="txt_6">우리동네_카페베네</p>
+
+                    <p class="txt_7">그래서,우리의 내일이
+                        <br>오늘보다 조금 더 빛날 수 있도록
+                    </p>
+                    <p class="txt_8"> 누구에게나 열려있는 공간
+                        <br> 머물고 싶은 편안한 아지트가 되겠습니다
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </article>
+        </section>
+        <!--하단  -->
+        <footer id="footer">
+        <div class="top">
+        <nav class="foot_nav">
+            <ul>
+                <li><a href="#">오시는 길</a></li>
+                <li><a href="#">제휴문의</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터 1688-4666</a></li>
+            </ul>
+        </nav>
+        <img src="./img/ico-arr-top.png" alt="">
+        </div>
+        <div class="footer_line"></div>
+        <div class="bottom">
+        <img src="./img/footer-logo.png" alt="">
+        <div class="info">
+        <address>서울시 성동구 상원1길 25</address>
+            <span class="tt">대표이사</span><span class="ts">박그레타</span><br>
+            <span>사업자등록번호</span><span class="ts">206-86-29161</span>
+            <span>benecs@caffebene.co.kr</span>
+        </div>
+        <p>Copyrightⓒby Caffebene, All right reserved.</p>
+
+        <div class="sns">
+        <img src="./img/ico-insta.png" alt="">
+        <img src="./img/ico-blog.png" alt="">
+        <img src="./img/ico-fb.png" alt="">
+        <img src="./img/ico-youtub.png" alt="">
+        <img src="./img/ico-app.png" alt="">
+        </div>
+        </div>
+        </footer>
+        </div>
+    </body>
+    </html>

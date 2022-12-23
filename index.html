@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <title>CAFEBENE HOME</title>
+    <script src="./js/jquary.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sub_mn_area').hide();
+            let key = true;
+            console.log(key);
+
+            $('#header nav').mouseenter(function () {
+                if (key == true) {
+                    key = false;
+                    console.log(key);
+                    $('.sub_mn_area').show().css({ height: '0px' }).animate({ height: '235px' });
+                }
+            });
+            $('.sub_mn_area').mouseleave(function () {
+                key = true;
+                console.log(key);
+                $(this).css({ height: '235px' }).animate({ height: 0 })
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_in">
+                <div class="logo"></div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#">CAFFEBENE</a></li>
+                        <li><a href="#">MENU</a></li>
+                        <li><a href="#">STORE</a></li>
+                        <li><a href="#">MEMBERSHIP</a></li>
+                        <li><a href="#">GLOBAL</a></li>
+                        <li><a href="#">CONTENTS</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="btn">가맹문의</a>
+                <div class="lang">
+                    <ul>
+                        <li><a href="#">KR</a></li>
+                        <li><a href="#">EN</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sub_mn_area">
+                <ul>
+                    <li>
+                        <a href="#">브랜드 스토리</a>
+                        <a href="#">베네캣 스토리</a>
+                        <a href="#">카페베네 원두</a>
+                        <a href="#">카페베네 소식</a>
+                        <a href="#">매거진</a>
+                    </li>
+                    <li>
+                        <a href="#">신메뉴</a>
+                        <a href="#">커피</a>
+                        <a href="#">음료</a>
+                        <a href="#">푸드</a>
+                        <a href="#">MD상품</a>
+                        <a href="#">Retail</a>
+                    </li>
+                    <li>
+                        <a href="#">국내</a>
+                        <a href="#">해외</a>
+                    </li>
+                    <li>
+                        <a href="#">등급&혜택</a>
+                        <a href="#">가입방법안내</a>
+                        <a href="#">서비스</a>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">해외매장안내</a>
+                        <a href="#">해외사업소개</a>
+                        <a href="#">해외가맹&유통문의</a>
+                    </li>
+                    <li>
+                        <a href="#">커피</a>
+                        <a href="#">우리동네</a>
+                        <a href="#">사람들</a>
+                        <a href="#">메뉴</a>
+                        <a href="#">이벤트</a>
+                        <a href="#">매장</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!--메인  -->
+        <section id="main_container">
+        <!-- 메인 이미지 -->
+        <section id="main_img">
+           <div class="list">
+                <ul>
+                    <li><img src="./img/background01.jpg" alt=""></li>
+                    <li><img src="./img/background02.jpg" alt=""></li>
+                    <li><img src="./img/background03.jpg" alt=""></li>
+                </ul>
+           </div>
+           <ul class="m_btn">
+                <li><a href="#" class="on">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+            </ul>
+        </section>
+          <!-- 컨텐츠 -->
+            <article class="contents">
+              <header><h2 class="tit">Contents</h2></header>
+                <section class="left_box">
+                    <div class="box_top">
+                      <ul>
+                        <li>
+                            <img src="./img/contents01.png" alt="">
+                            <h4><a href="#">메뉴</a></h4>
+                            <p><a href="#">유자가 적힌 일기장</a></p>
+                        </li>
+                        <li>
+                            <img src="./img/contents02.png" alt="">
+                            <h4><a href="#">메뉴</a></h4>
+                            <p><a href="#">가을에 만나볼 수 있는 건강한 자연의 맛</a></p>
+                        </li>
+                        <li>
+                            <img src="./img/contents03.png" alt="">
+                            <h4><a href="#">이벤트</a></h4>
+                            <p><a href="#">가을 신메뉴 출시 이벤트</a></p>
+                        </li>
+                        <li>
+                            <img src="./img/contents04.png" alt="">
+                            <h4><a href="#">매장</a></h4>
+                            <p><a href="#">OPEN/대만 타오위안 쫑메이점</a></p>
+                        </li>
+                        <li>
+                            <img src="./img/contents05.png" alt="">
+                            <h4><a href="#">우리동네</a></h4>
+                            <p><a href="#">어쩐지 눈길이 가고 어쩐지 자꾸만 보고 싶은</a></p>
+                        </li>
+                        <li>
+                            <img src="./img/contents06.png" alt="">
+                            <h4><a href="#">매장</a></h4>
+                            <p><a href="#"> OPEN/백령도2호점</a></p>
+                        </li>
+                    </ul>
+                    <a href="#" class="add">컨텐츠 더보기</a>
+                </div>
+                </section>
+               
+                <section class="right_box">
+                    <img src="./img/m-cafe-bg.jpg" alt="" class="box_img">
+                    <h4>조금 더 특별하고<br>
+                    따뜻한, 그런 카페베네
+                    </h4>
+                    <ul>
+                        <li><img class="img_top" src="./img/contents7.jpg" alt=""></li>
+                        <p class="tit"><b>내가 오픈하고 싶은 카페</b></p>
+                        <p class="txt">동네와 공간,저마다의 <br>
+                             특별함과 다양함은 모두 다르니까요</p>
+                        <p><a href="#" class="right_view1">인테리어 보기</a></p>
+                        <li><img  class="img_bot" src="./img/contents8.jpg" alt=""></li>
+                        <p class="tit_bot"><b>가맹 개설 안내</b></p>
+                        <p class="txt_bot">가맹점 개설을 위한 절차를 <br>
+                        자세하게 안내드립니다</p>
+                        <a href="#" class="right_view2">개설 절차 보기</a>
+                    </ul>
+                </section>
+            </article>
+            <!-- 상품 -->
+          <article class="product">
+            <header><h2 class="tit">New & Best MD</h2></header>
+            <div class="slide">
+            <div class="l_btn"><img src="./img/md-arr-left.png" alt=""></div>
+            <ul>
+                <li>
+                    <img src="./img/md.01.jpg" alt="">
+                    <p class="name">베네캣 드라이브 텀블러 민트(650ml) </p>
+                    <p class="price"><strong>29,000원</strong></p>
+                </li>
+                <li>
+                    <img src="./img/md.02.jpg" alt="">
+                    <p class="name">블루밍 블렌드 드립백 (8개입) & 모슈x 굳세나 텀블러(350ml)선물 세트</p>
+                    <p class="price"><strong>39,000원</strong></p>
+                </li>
+                <li>
+                    <img src="./img/md.03.jpg" alt="">
+                    <p class="name"> 시그니처 드립백 커피 & 슬림 스텐컵(300ml)선물세트</p>
+                    <p class="price"><strong>29,000원</strong></p>
+                </li>
+                <li>
+                    <img src="./img/md.04.jpg" alt="">
+                    <p class="name">원두 커피 티백 (16개입) & 머그컵(520ml)선물세트 </p>
+                    <p class="price"><strong>34,000원</strong></p>
+                </li>
+                <li>
+                    <img src="./img/md.05.jpg" alt="">
+                    <p class="name">에티오피아 디카페인 드립백(8개입) & 머그 스텐컵 민트 (350ml) 선물 세트 </p>
+                    <p class="price"><b>32,000원</b></p>
+                </li>
+                <li>
+                    <img src="./img/md.06.jpg" alt="">
+                    <p class="name">더치커피 콜드브루 2종 & 홈카페 유리컵(7oz) 선물세트 </p>
+                    <p class="price"><b>33,000원</b></p>
+                </li>
+                <li>
+                    <img src="./img/md.07.jpg" alt="">
+                    <p class="name">베네캣 산책 텀블러 리유저블컵(470ml)</p>
+                    <p class="price"><b>8,800원</b></p>
+                </li>
+                <li>
+                    <img src="./img/md.08.jpg" alt="">
+                    <p class="name">베네캣 홈카페 머그 스텐컵 화이트(360ml)</p>
+                    <p class="price"><b>22,000원</b></p>
+                </li>
+                <li>
+                    <img src="./img/md.09.jpg" alt="">
+                    <p class="name"> 시그니처 & 에티오피아 디카페인 드립백 커피 [혼합형] [4+4, 8개입]</p>
+                    <p class="price"><b>9,600원</b></p>
+                </li>
+                <li>
+                    <img src="./img/md.10.jpg" alt="">
+                    <p class="name">위드베네캣 홈카페 머그컵 L (520ml)</p>
+                    <p class="price"><b>16,000원</b></p>
+                </li>
+                <li>
+                    <img src="./img/md.11.jpg" alt="">
+                    <p class="name">베네캣 장우산</p>
+                    <p class="price"><b>16,000원</b></p>
+                </li>
+                <li>
+                    <img src="./img/md.12.jpg" alt="">
+                    <p class="name">베네캣 드라이브 텀블러 그레이(650ml)</p>
+                    <p class="price"><b>36,300원</b></p>
+                </li>
+            </ul>
+            <div class="r_btn"><img src="./img/md-arr-right.png" alt=""></div>
+        </div>
+          </article>
+          <!-- 스토리 -->
+         <article class="story">
+            <div class="box"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+           <div class="story_in">
+            <ul class="left_story">
+                <div class="group">
+                    <li class="top">
+                        <img src="./img/story.01.jpg" alt="">
+                    </li>
+                    <li class="left">
+                        <img src="./img/story.02.gif" alt="">
+                        <p>
+                          <b>
+                            '좋은'사람들이 <br>
+                            '좋은'원두로 <br>
+                            '좋은'커피를 내리는 곳<br>
+                            바로 카페베네입니다.
+                        </b>
+                        </p>
+                    </li>
+                    <li class="right">
+                        <img src="./img/story.03.jpg" alt="">
+                    </li>
+                </div>
+                <li class="left_bot">
+                    <img src="./img/story.04.jpg" alt="">
+                </li>
+            </ul>
+            <ul class="right_story">
+                <li class="left">
+                    <img src="./img/story.05.jpg" alt="">
+                </li>
+                <li class="right">
+                    <img src="./img/story.06.jpg" alt="">
+                </li>
+            </ul>
+           </div>
+         </article>
+         <!-- 사이드 메뉴 -->
+         <article class="side">
+            <a href="#"><img src="./img/aside-insta.png" alt=""></a>
+            <a href="#"><img src="./img/aside-blog.png" alt=""></a>
+            <a href="#"><img src="./img/aside-fran.png" alt=""></a>
+           </article>
+       </section>
+       <!--하단  -->
+    <footer id="footer">
+            <div class="top">
+                <nav class="foot_nav">
+                    <ul>
+                        <li><a href="#">오시는 길</a></li>
+                        <li><a href="#">제휴문의</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#" style="color: rgb(17, 173, 173);">고객센터 1688-4666</a></li>
+                    </ul>
+                </nav>
+               <img src="./img/ico-arr-top.png" alt="">
+            </div>
+            <div class="footer_line"></div>
+            <div class="bottom">
+                <img src="./img/footer-logo.png" alt="">
+               <div class="info">
+                <address>서울시 성동구 상원1길 25</address>
+					<span class="tt">대표이사</span><span class="ts">박그레타</span><br>
+					<span>사업자등록번호</span><span class="ts">206-86-29161</span>
+					<span>benecs@caffebene.co.kr</span>
+               </div>
+                <p>Copyrightⓒby Caffebene, All right reserved.</p>
+
+               <div class="sns">
+                <img src="./img/ico-insta.png" alt="">
+                <img src="./img/ico-blog.png" alt="">
+                <img src="./img/ico-fb.png" alt="">
+                <img src="./img/ico-youtub.png" alt="">
+                <img src="./img/ico-app.png" alt="">
+               </div>
+            </div>
+    </footer>
+    </div>
+</body>
+</html>
