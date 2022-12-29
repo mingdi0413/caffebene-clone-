@@ -7,7 +7,36 @@
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/sub2.css">
     <script src="./js/jquary.js"></script>
-    <title>Document</title>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/sub1.js"></script> 
+    <title>MENU</title>
+    <script>
+        $(document).ready(function () {
+            $('.sub_mn_area').hide();
+            let key = true;
+            console.log(key);
+
+            $('#header nav').mouseenter(function () {
+                if (key == true) {
+                    key = false;
+                    console.log(key);
+                    $('.sub_mn_area').show().css({ height: '0px' }).animate({ height: '235px' });
+                }
+            });
+            $('#header nav').mouseleave(function () {
+                if (key == true) {
+                    key = false;
+                    console.log(key);
+                    $('.sub_mn_area').show().css({ height: '0px' }).animate({ height: '235px' });
+                }
+            });
+            $('.sub_mn_area').mouseleave(function () {
+                key = false;
+                console.log(key);
+                $(this).css({ height: '300px' }).animate({ height: 0 })
+            });
+        });
+    </script>
 </head>
 <body>
     <div id="wrap">
@@ -15,12 +44,12 @@
          <header id="header">
             <div class="header_in">
                 <!-- 로고 -->
-                <div class="logo"></div>
+                <a href="./index.html"><div class="logo"></div></a>
                 <!-- 네비게이션 -->
                  <nav id="nav">
                     <ul>
                         <li><a href="#">CAFFEBENE</a></li>
-                        <li><a href="#">MENU</a></li>
+                        <li><a href="./sub2.html">MENU</a></li>
                         <li><a href="#">STORE</a></li>
                         <li><a href="#">MEMBERSHIP</a></li>
                         <li><a href="#">GLOBAL</a></li>
@@ -37,10 +66,10 @@
                     </ul>
                 </div>
             <!-- 서브메뉴 -->
-               <div class="sub_mn_area" style="display: none;">
+               <div class="sub_mn_area">
                 <ul>
                     <li>
-                        <a href="#">브랜드 스토리</a>
+                        <a href="./index_sub1.html">브랜드 스토리</a>
                         <a href="#">베네캣 스토리</a>
                         <a href="#">카페베네 원두</a>
                         <a href="#">카페베네 소식</a>
@@ -86,10 +115,10 @@
             <!-- 상단 바로가기? -->
             <div class="bar">
                 <div class="bar_in">
-                    <a href="#">
+                    <a href="./index.html">
                         <span class="home"></span>
                     </a>
-                    <a href="#">
+                    <a href="./sub2.html">
                         <span class="txt">MENU</span>
                     </a>
                 </div>

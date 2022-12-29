@@ -442,6 +442,7 @@
     margin-right: -25px;
     width: 45px;
     height: 45px;
+    cursor: pointer;
     border-radius: 50%;
     overflow: hidden;
     background-color: #ccc;
@@ -458,21 +459,24 @@
     margin: 0 auto;
     width: 1200px;
     height: 260px;
+
 }
 
 #main_container .product ul {
     margin: 0 auto;
     width: 1080px;
     height: 260px;
+    display: flex;
+    flex-direction: row;
     overflow: hidden;
 }
 
 #main_container .product li {
-    float: left;
+   float: left;
     margin: 0 auto;
     width: 220px;
     margin-right: 50px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 #main_container .product li:last-child {
     margin-right: 0px;
@@ -496,10 +500,12 @@
 }
 #main_container .product .r_btn {
     float: right;
-    margin-top: 100px;
     width: 45px;
     height: 45px;
+    position: relative;
+    top: -150px;
     border-radius: 50%;
+    cursor: pointer;
     overflow: hidden;
     background-color: #ccc;
     
